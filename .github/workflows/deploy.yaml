@@ -129,7 +129,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: "ghcr.io/kaspanet/rusty-kaspad:${{ github.event.release.tag_name }},ghcr.io/kaspanet/rusty-kaspad:latest"
+          tags: "ghcr.io/based64god/kaspad:${{ github.event.release.tag_name }},ghcr.io/based64god/kaspad:latest"
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/amd64
@@ -139,7 +139,7 @@ jobs:
         uses: docker/build-push-action@v6
         with:
           push: true
-          tags: "ghcr.io/kaspanet/rusty-kaspad:${{ github.event.release.tag_name }},ghcr.io/kaspanet/rusty-kaspad:latest"
+          tags: "ghcr.io/based64god/kaspad:${{ github.event.release.tag_name }},ghcr.io/based64god/kaspad:latest"
           cache-from: type=gha
           cache-to: type=gha,mode=max
           platforms: linux/arm64
